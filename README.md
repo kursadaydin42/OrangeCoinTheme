@@ -1,0 +1,2 @@
+# OrangeCoinTheme
+One page theme.
