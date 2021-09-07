@@ -1,0 +1,100 @@
+/*
+Responsive CSS File
+*/
+
+/* Full Desktop TV */
+@media (min-width:1500px) and (max-width:2000px){
+
+}
+/*Desktop */
+@media (min-width:994px) and (max-width:2000px)
+{
+
+}
+
+/* Mobil Tablette de */
+@media (min-width:280px) and (max-width:994px)
+{
+	.oynac{width: 100%; height: auto}
+	.creativeHeight{
+		height:auto;
+	}
+	.bg-newCard{
+		height: auto;
+		justify-content: inherit;
+	}
+	.fs-20{font-size:12px;}
+	.fs-18{font-size:12px;}
+	.fs-16{font-size:12px;}
+	.fs-64{font-size:37px;}
+	.fs-36{font-size:27px;}
+	/* HEADER */
+	.beforeNavbar, .headNavbar{
+		background-color:#fff;
+	}
+	.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .nav-link.active{
+		color:#333;
+	}
+	.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus{
+		color:#333;
+	}
+	.navbar-dark .navbar-nav .nav-link{
+		color:#333;
+	}
+	.beforeNavbar .navbar-nav .nav-link{
+		line-height: 11px;
+		padding: 20px 5px 20px 5px;
+	}
+	.bg-newCard:before{
+		content:none;
+	}
+	.afterArrow:after , .afterArrowLeft:after{
+		content:none;
+	}
+	.fs-sm-14{
+		font-size:14px;
+	}
+	.socialMediaList{
+		position:absolute;
+		bottom:12px;
+	}
+	.faqButton{
+		font-size:20px;
+	}
+
+}
+/*OFFCANVAS*/
+@media (max-width: 991.98px) {
+	.offcanvas-collapse {
+		position: fixed;
+		top: 71px; /* Height of navbar */
+		bottom: 0;
+		left: 100%;
+		width: 87%;
+		padding-right: 1rem;
+		padding-left: 1rem;
+		padding-top:30px;
+		overflow-y: auto;
+		visibility: hidden;
+		z-index:1030;
+		background-color: #fffffff5;
+		transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+	}
+	.offcanvas-collapse.open {
+		visibility: visible;
+		transform: translateX(-100%);
+	}
+}
+/*OFFCANVAS END*/
+
+/*IOS ERROR*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	input[type=text], input[type=button] {
+		-webkit-appearance: none;
+		-webkit-border-radius: 0;
+	}
+	button{
+		-webkit-appearance: none;
+		-webkit-border-radius: 0;
+	}
+}

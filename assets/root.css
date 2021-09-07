@@ -1,0 +1,225 @@
+/*
+Author: Before Plus Bilisim
+Root CSS File
+*/
+
+/* IMPORT */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+/* ROOT COLOR */
+:root{
+	--ana-renk:#FF841A;
+	--ana-renk2:#013641;;
+
+}
+/* ROOT CSS */
+::selection {
+	background: var(--ana-renk);
+	color:#fff;
+}
+/* width */
+::-webkit-scrollbar {
+	width: 5.2px;
+	scroll-behavior: smooth;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px white; 
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--ana-renk) !important; 
+	border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #b30000; 
+}
+.font-primary{
+	font-family:"HVD Comic Serif Pro";
+}
+.lh-16{
+	line-height:1.6;
+}
+.lh-87{
+	line-height:87px;
+}
+.text-info2{
+	color:#00A9CE;
+}
+.btn-info2{
+	background-color:#00A9CE;
+	border-color:#00A9CE;
+}
+.bg-gray{
+	background-color:#E2E2E2;
+}
+.bg-gray2{
+	background-color:#E7E9EF;
+}
+.bg-gray3{
+	background-color:#D6D7D8;
+}
+.bg-gray4{
+	background-color:#EAEAEA;
+}
+.bg-blue{
+	background-color:#5CBED9;
+}
+.bg-glight{
+	background-color:#F0F8FF;
+}
+
+.fs-18{font-size:18px !important;}
+.fs-17{font-size:17px;}
+.fs-20{font-size:20px;}
+.fs-22{font-size:22px;}
+.fs-24{font-size:24px;}
+.fs-28{font-size:28px;}
+.fs-12{font-size:12px;}
+.fs-13{font-size:13px;}
+.fs-14{font-size:14px;}
+.fs-15{font-size:15px;}
+.fs-16{font-size:16px;}
+.fs-36{font-size:36px;}
+.fs-64{font-size:72px;}
+.fw-500{
+	font-weight:500 !important;
+}
+.fw-400{
+	font-weight:400 !important;
+}
+.text-shadow{
+	text-shadow: 1px 1px 10px #000;
+}
+.text-primary2{
+	color:var(--ana-renk) !important;
+}
+.text-primary3{
+	color:var(--ana-renk2) !important;
+}
+.bg-primary2{
+	background-color:var(--ana-renk);
+}
+.bg-primary3{
+	background-color:#005475;
+}
+.bg-warning2{
+	background-color:#FFF3CD;	
+}
+.opacity50{
+	opacity:.7;
+}
+.btn-primary2{
+	background-color:var(--ana-renk);
+	border-color:var(--ana-renk) ;
+	color:#fff !important;
+	font-size:16px;
+	border-radius:8px;
+	padding: 17px 30px;
+	margin-bottom:16px;
+	font-weight:400;
+	width:245px;
+	height:56px;
+	font-family:"HVD Comic Serif Pro";
+}
+.btn-primary3{
+	margin-bottom:16px;
+	background-color:#fff;
+	border-color:#fff ;
+	color:var(--ana-renk) !important;
+	font-size:16px;
+	border-radius:8px;
+	padding: 17px 30px;
+	font-weight:400;
+	width:245px;
+	height:56px;
+	font-family:"HVD Comic Serif Pro";
+}
+
+.text-warning2{color:#FE931b;}
+
+/*Yerlesik Ekranlar*/
+@media (min-width:994px) and (max-width:2000px)
+{
+  /*
+	.dropdown:hover .dropdown-menu{
+		display: block;
+	}
+	.dropdown-menu{
+		margin-top: 0px;
+		border-radius:0;
+	}
+	.dropdown-toggle::after{display:none;}
+	*/
+}
+
+.wp-button {
+	position: fixed;
+	display: flex;
+	width: 60px;
+	height: 60px;
+	bottom: 23px;
+	left: 15px;
+	background-color: #25d366;
+	color: #FFF;
+	border-radius: 50px;
+	/* text-align: center; */
+	font-size: 30px;
+	/* box-shadow: 1px 1px 6px #999; */
+	z-index: 100;
+	align-items: center;
+	justify-content: center;
+}
+/* Before Top Start */
+#beforeTop {
+	display: inline-block;
+	background-color:var(--ana-renk);
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 25px;
+	right: 20px;
+	transition: background-color .3s, 
+	opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+}
+#beforeTop::after {
+
+	font-weight: normal;
+	font-style: normal;
+	font-size: 2em;
+	line-height: 50px;
+	color: #fff;
+}
+#beforeTop:hover {
+	cursor: pointer;
+	background-color: #333;
+}
+#beforeTop:active {
+	background-color: #555;
+}
+#beforeTop.show {
+	opacity: 1;
+	visibility: visible;
+}
+#beforeTop i{
+	display: block;
+	margin: auto;
+	padding: 12px;
+	color: #fff;
+}
+/* Before Top End */
+
+/* Translate */
+#goog-gt-tt {display:none !important;}
+.goog-te-banner-frame {display:none !important;}
+.goog-te-menu-value:hover {text-decoration:none !important;}
+#google_translate_element2 {display:none!important;}

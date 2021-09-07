@@ -1,0 +1,238 @@
+/*
+Author: Before Plus Bilisim
+Main CSS File
+Project: OrangeToken
+*/
+
+@import url("root.css");
+@import url('fonts/stylesheet.css');
+
+a{
+	text-decoration:none;
+}
+body{
+	font-family: 'Sofia Pro', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: #454545;
+	background:#fff;
+}
+
+/*HEADER*/
+header{
+	width:100%;
+	border-bottom:3px solid var(--ana-renk);
+}
+.oynac{
+	width: 100%; height: 500px;
+}
+.creativeHeight{
+	/*height:600px;*/
+	height:450px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.beforeNavbar{
+	background-color:#fff;
+}
+.beforeNavbar .nav-link{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 20px;
+	color:#013641;
+}
+.beforeNavbar .navbar-nav .nav-link
+{
+	color:#013641;
+	margin-right:10px;
+}
+.socialMediaList{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.socialMediaList li{
+	display:inline-block;
+	padding:3px;
+}
+.socialMediaList li a{
+	width:32px;
+	height:32px;
+	background-color:#FF841A;
+	border-radius:100%;
+	color:#fff;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.listicon{
+	background-image:url(../img/listicon.png);
+	width:19px;
+	height:15px;
+	background-repeat: no-repeat;
+	display:inline-flex;
+	vertical-align: middle;
+}
+.bg-newCard{
+	background-color:#FFF3E8;
+	border-radius:60px;
+	border-color:transparent;
+	position:relative;
+	/*box-shadow:-36px 48px 0px 0px var(--ana-renk);*/
+	height: 305px;
+	justify-content: center;
+}
+.bg-newCard:before{
+	content:"";
+	background-repeat: no-repeat;
+	background-image:url(../img/mask.png);
+	width: 95%;
+	display: block;
+	height: 95%;
+	/*height: -webkit-fill-available;*/
+	position: absolute;
+	z-index: -1;
+	left: -35px;
+	background-color: var(--ana-renk);
+	border-radius: 61px;
+	top: 51px;
+}
+.afterArrow:after{
+	content:"";
+	background-image:url(../img/after-arrow.png);
+	width:449px;
+	height:145px;
+	display:block;
+	position:absolute;
+	z-index:-1;
+	bottom: -190px;
+
+}
+.afterArrowLeft:after{
+	content:"";
+	background-image:url(../img/after-arrow2.png);
+	width:449px;
+	height:145px;
+	display:block;
+	position:absolute;
+	z-index:-1;
+	bottom: -190px;
+	right:-155px;
+	
+}
+
+/*FAQ*/
+.faqButton{
+	background-color:#FFF3E8;
+	border-radius:20px;
+	color:var(--ana-renk) !important;
+	font-size:24px;
+	border:0;
+}
+.faqButton:focus {
+	z-index: 3;
+	border-color: transparent;
+	outline: 0;
+	box-shadow: none;
+}
+.accordion-item:last-of-type .accordion-button.collapsed{
+	border-radius:20px;
+}
+.accordion-item:first-of-type .accordion-button {
+	border-bottom-left-radius: 0.25rem;
+	border-bottom-right-radius: 0.25rem;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+.accordion-button:not(.collapsed) {
+	background-color: #FFF3E8;
+}
+.accordion-item:last-of-type .accordion-collapse {
+	border-bottom-width: 1px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.accordion-button::after{
+	background-image:url(../img/down-button.svg);
+	
+}
+.accordion-button:not(.collapsed)::after{
+	background-image:url(../img/down-button.svg);
+}
+.accordion-collapse {
+	border:0;
+	background: #fff3e8;
+}
+.accordion-header{
+	margin-bottom:-2px;
+}
+.faqBefore:before{
+	content: "";
+	background-repeat: no-repeat;
+	background-image: url(../img/mask.png);
+	width: 70%;
+	display: block;
+	height: 60px;
+	position: absolute;
+	z-index: -1;
+	left: 0px;
+	background-color: var(--ana-renk);
+	border-radius: 16px;
+	top: 11px;
+}
+.accordion-item:last-of-type .accordion-collapse:before{
+	content: "";
+	background-repeat: no-repeat;
+	background-image: url(../img/mask.png);
+	width: 70%;
+	display: block;
+	height: 105%;
+	position: absolute;
+	z-index: -1;
+	left: 0px;
+	background-color: var(--ana-renk);
+	border-radius: 16px;
+	top: 11px;
+}
+
+/*TimeLine*/
+.timeAfter, .timeAfter2{position:relative;}
+.timeAfter:before{
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 27px;
+	background-color: var(--ana-renk);
+	display: block;
+	top: 30px;
+	left: 27px;
+}
+.timeAfter2:after{
+	content: "";
+	position: absolute;
+	width: 24px;
+	height: 2px;
+	background-color: var(--ana-renk);
+	display: block;
+	top: 15px;
+	left: 44px;
+}
+/*FOOTER*/
+footer{
+	border-top:3px solid var(--ana-renk);
+}
+.footerNav .footerNavHead{
+	color:#013641;
+}
+.footerNav .footerNavLink{
+	list-style:none;margin:0;padding:0;
+}
+.footerNavLink li a{
+	color:#013641;
+	font-size:16px;
+	font-weight:400;
+}
+
